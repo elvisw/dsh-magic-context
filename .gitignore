@@ -1,0 +1,45 @@
+# Dependencies and generated outputs (keep dependency lockfiles).
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.stage0/
+.codegraph/
+
+# BMad installation is local tooling, not project research.
+# Keep portable project configuration; local user overrides stay untracked.
+/_bmad/*
+!/_bmad/config.toml
+
+# Credentials and machine-local runtime data.
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+/.dsh/
+/sessions/
+/runtime/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.log
+.tmp/
+.temp/
+
+# Local Python tooling and editor/OS files.
+.venv/
+__pycache__/
+*.py[cod]
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+*.swp
+*.swo
