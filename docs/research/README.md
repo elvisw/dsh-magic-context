@@ -48,6 +48,9 @@
 
 ## 可复核来源
 
+- [2026-11-07上游基线检查](upstream-baseline-check-2026-11-07.md)
+- [2026-11-07来源核对收尾](source-check-handoff-2026-11-07.md)：latest release与现基线相同，默认分支只追加CLI发布README复制步骤；本次不移动基线。
+
 - [MC固定快照](https://github.com/cortexkit/magic-context/tree/33fb6ac9a39c8bb299776b6b514ea0815a15a225)：v0.49.40。
 - [DSH固定快照](https://github.com/deepseek-ai/deepseek-harness/tree/fcc0ad462172522aaf5c93a7b2e01f6b9f0b0159)。
 
