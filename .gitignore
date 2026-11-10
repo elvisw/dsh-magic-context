@@ -24,6 +24,8 @@ coverage/
 /.dsh/
 /sessions/
 /runtime/
+/.cortexkit/
+/_bmad-output/**/experiment-root.json
 *.sqlite
 *.sqlite-*
 *.db

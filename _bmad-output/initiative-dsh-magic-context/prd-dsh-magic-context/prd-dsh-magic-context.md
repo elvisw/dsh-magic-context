@@ -5,7 +5,7 @@ version: 1.0.0
 type: initiative-prd
 status: draft
 created: 2026-11-07
-updated: 2026-11-07
+updated: 2026-11-10
 ---
 
 # DSH Magic Context 产品需求草案
@@ -32,6 +32,15 @@ updated: 2026-11-07
 面向后续需求拆分、架构与实现。用户已确认独立维护 DSH 适配层、固定上游版本并尽量复用源码、提示词和测试。本文件是需求讨论草案，不代表已批准实施或已确定全部 V1 范围。
 
 来源：本次用户需求及后续澄清；技术事实由相邻的 `../research-context-lifecycle/` 研究单独提供。源码研究已完成，不等于DSH运行兼容性已经验证。
+
+### 2026-11-10 研究输入与待重评事项
+
+本次仅追加草案状态说明，不修改下文FR、RULE、SM、OQ、版本基线或原有范围。下文保留原始移植草案的语境，**不应据此直接进入实施**。
+
+- 后续已完成[竞品研究补充](../research-context-plugin-landscape/research-context-plugin-landscape.md)及[Windows真实DSH隔离验收](../acceptance-windows-dsh-2026-11-09/acceptance-report.md)。验收对象是第三方插件`dsh-plugin-magic-context@0.11.1`、宿主`0.2.2-rc.1`，不是本项目实现；不代表原有阶段0实施计划已执行。
+- [#13](https://github.com/wk544863858/dsh-plugin-magic-context/issues/13)确认的是竞品现有原位恢复路径中的requeue缺陷；优先建议改为独立读取原文、返回新工具结果，新内容按新tag回收。若保留原位恢复，则需修状态转换。不能把旧tag重复回收用例直接用于新语义。
+- [#14](https://github.com/wk544863858/dsh-plugin-magic-context/issues/14)是摘要发布后独立原文检索的能力边界确认/建议，不强求旧tag或撤销摘要，也不是已确认违反竞品契约。上游模式差异见验收报告与Issue留档，不自动改变本草案的固定上游版本。
+- **待重评，尚未定案：**独立移植、上游贡献或受限fork的项目定位；FR-1/FR-4在不同恢复语义下的验收契约；MVP范围与是否继续原阶段0计划。研究建议优先贡献上游，但对上游的建议不等于本项目已批准的架构或范围变更。本次文档同步不新增或关闭OQ，也不冻结V1。
 
 ## Vision
 

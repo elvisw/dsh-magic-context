@@ -2,6 +2,14 @@
 
 本目录把聊天中已确认的需求、固定版本研究和后续规划串联起来，避免只在会话中保留关键结论。以下资料均已落盘；研究完成不等于插件已经实现。
 
+## 后续实测与 fork 交接（2026-11-10）
+
+- [Fork 编程智能体轻量交接](../../_bmad-output/initiative-dsh-magic-context/handoff-fork-development/handoff-fork-development.md)：当前接手入口，区分已验证事实、拟议恢复契约和实施授权。
+- [Windows＋真实 DSH 隔离验收](../../_bmad-output/initiative-dsh-magic-context/acceptance-windows-dsh-2026-11-09/acceptance-report.md)：现成插件 `0.11.1` 的运行证据及 #13/#14 后续澄清。
+- [竞品研究及后续补充](../../_bmad-output/initiative-dsh-magic-context/research-context-plugin-landscape/research-context-plugin-landscape.md)：优先验证现成方案与贡献差距，而非从零重做。
+
+下文固定版本、阶段0及“未运行应用测试/模型”等状态属于早期独立移植研究，不涵盖后续现成插件验收；原始记录保留，不自动成为 fork 的需求或实现契约。
+
 ## 需求与决定
 
 - [用户需求与决定记录](user-input-and-decisions.md)：完整功能范围、首要痛点、已批准范围与未决事项。

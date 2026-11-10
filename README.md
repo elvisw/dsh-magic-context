@@ -6,8 +6,11 @@
 
 > 当前处于研究与规划阶段，没有可安装的插件。源码研究完成不代表运行兼容性已经验证。
 
+> **2026-11-10 后续状态：**现成插件已另做隔离实测，当前先整理 fork 的轻量开发交接。请优先阅读[交接说明](./_bmad-output/initiative-dsh-magic-context/handoff-fork-development/handoff-fork-development.md)和[当前 initiative](./_bmad-output/initiative-dsh-magic-context/initiative-dsh-magic-context.md)。下文独立移植方向、阶段0及验证状态记录早期规划，不是本次 fork 的实施授权；正式定位与恢复契约仍待确认。
+
 ## 阅读入口
 
+- [Fork 编程智能体轻量交接](./_bmad-output/initiative-dsh-magic-context/handoff-fork-development/handoff-fork-development.md)：现有研究如何用于相邻 fork，含资料入口、契约边界及启动提示。
 - [研究与决策总索引](docs/research/README.md)：已落盘的资料、来源、结论及未决事项。
 - [固定版本源码研究](./_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/research-context-lifecycle.md)：请求链路、可逆卸载、宿主边界和测试证据。
 - [PRD 草案](./_bmad-output/initiative-dsh-magic-context/prd-dsh-magic-context/prd-dsh-magic-context.md)：保留全部原始需求，完整 V1 尚未冻结。
@@ -33,7 +36,7 @@
 - `docs/`：研究导航、设计草案和阶段0计划。
 - `_bmad/config.toml`：可移植的项目配置。BMad 安装脚本及本地用户覆盖不纳入版本管理；需要运行工作流时在本机安装 BMad 并选择 `initiative-dsh-magic-context`。
 - 临时参考 clone 不上传；报告保存远程仓库、固定提交、相对源码路径和行号，可重新获取证据。历史检查文件中的本机路径仅记录当时的研究环境，不是运行依赖。
-- 不上传凭据、会话数据库、实验运行日志、依赖或生成缓存。依赖锁文件在将来创建后应提交。
+- 不上传凭据、会话数据库、未脱敏实验运行日志、依赖或生成缓存。可版本化报告明确列出的脱敏合成验收证据及完整性摘要；本机实验路径指针和 AI 运行缓存不纳入版本管理。依赖锁文件在将来创建后应提交。
 
 ## 验证状态
 
