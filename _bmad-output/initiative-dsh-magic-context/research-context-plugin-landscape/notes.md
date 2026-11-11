@@ -16,5 +16,10 @@
 - 本项目固定MC版本较新不自动形成产品差异；需要指出具体新增能力或修复并验证价值。
 - 不把已有竞品“未列出某功能”直接写成源码绝对不存在；按本次已读接口/文档范围标注。
 
+## 2026-11-11 后续源码核查
+
+- 新增 [#15：手动 flush 功能建议](https://github.com/wk544863858/dsh-plugin-magic-context/issues/15)，[正文与固定来源](../acceptance-windows-dsh-2026-11-09/issue-ctx-flush.md)。已有自动 pending 处理能力，缺少显式强制入口；下一请求生效，不是同步清空上下文或生成摘要。
+- 不将该能力缺口与 #13 的状态缺陷混同，也不声称它解决 #14。仅补充源码/文档核查，原运行证据和需求基线不变，未修改 fork 或提交本轮资料。
+
 ## Process issues
 - PowerShell foreach复合命令被portable shell scanner拒绝；改为独立memlog append调用，无产品代码变更。

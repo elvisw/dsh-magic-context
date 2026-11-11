@@ -18,3 +18,8 @@ parent: none
 
 - 用户已准备相邻的 `dsh-plugin-magic-context` fork；当前先用[轻量交接说明](handoff-fork-development/handoff-fork-development.md)复用本仓库研究，不迁移 BMad、不复制两套规划。
 - 已只读核对本地 fork 基线；本阶段仅编写交接资料和核对入口，未修改 fork 或批准插件实现。恢复契约、任务范围及执行授权仍需后续确认；未来是否使用统一 workspace 按持续维护需要再定。
+
+## 2026-11-11 新增功能建议输入
+
+- 已提交 [#15：手动 /ctx-flush](https://github.com/wk544863858/dsh-plugin-magic-context/issues/15)，[源码核查与正文留档](acceptance-windows-dsh-2026-11-09/issue-ctx-flush.md)。插件已有自动队列处理，缺少用户强制处理 pending 并刷新相关缓存的入口；建议最迟下一次模型请求生效，不额外生成摘要，不替代 #13/#14。
+- 本次未新增运行验收，不更改原始证据、FR 或阶段0范围。该建议尚待维护者及用户决策，不自动扩展 fork 首次接手或实施授权。

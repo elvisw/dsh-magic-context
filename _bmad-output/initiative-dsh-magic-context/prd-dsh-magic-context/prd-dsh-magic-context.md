@@ -5,7 +5,7 @@ version: 1.0.0
 type: initiative-prd
 status: draft
 created: 2026-11-07
-updated: 2026-11-10
+updated: 2026-11-11
 ---
 
 # DSH Magic Context 产品需求草案
@@ -41,6 +41,10 @@ updated: 2026-11-10
 - [#13](https://github.com/wk544863858/dsh-plugin-magic-context/issues/13)确认的是竞品现有原位恢复路径中的requeue缺陷；优先建议改为独立读取原文、返回新工具结果，新内容按新tag回收。若保留原位恢复，则需修状态转换。不能把旧tag重复回收用例直接用于新语义。
 - [#14](https://github.com/wk544863858/dsh-plugin-magic-context/issues/14)是摘要发布后独立原文检索的能力边界确认/建议，不强求旧tag或撤销摘要，也不是已确认违反竞品契约。上游模式差异见验收报告与Issue留档，不自动改变本草案的固定上游版本。
 - **待重评，尚未定案：**独立移植、上游贡献或受限fork的项目定位；FR-1/FR-4在不同恢复语义下的验收契约；MVP范围与是否继续原阶段0计划。研究建议优先贡献上游，但对上游的建议不等于本项目已批准的架构或范围变更。本次文档同步不新增或关闭OQ，也不冻结V1。
+
+### 2026-11-11 追加研究输入：手动 flush
+
+已向现成插件提交 [#15：增加 /ctx-flush](https://github.com/wk544863858/dsh-plugin-magic-context/issues/15)，[正文与源码依据](../acceptance-windows-dsh-2026-11-09/issue-ctx-flush.md)。核查插件 `dsh-plugin-magic-context@0.11.1` 已有自动队列处理，但没有发现用户主动强制处理 pending 并刷新相关缓存的入口；原版最迟在下一次模型请求中生效，不是强制生成摘要。此项与 #13 的重新入队缺陷、#14 的归档读取边界独立，本次仅源码/文档核查，未新增运行验收，也不新增 FR、修改版本基线或批准实施。
 
 ## Vision
 

@@ -30,3 +30,11 @@
 - #14按能力边界确认/改进建议处理：要求摘要发布后仍有独立原文读取入口，不强求旧tag或撤销摘要。只实测了当前旧tag入口失效，原始事件仍在，不据此断言物理删除或违反竞品承诺。
 - 原版OpenCode固定提交`17801ffd2f9635af1abae893e37914359110f2c1`仅做源码/测试核查：TS按持久化tag查原文；Rust拒绝tag并引导消息序号/范围。消息序号、tag和DSH事件序号不能混用。此补充不改变本项目PRD既有上游版本基线。
 - 固定源码与公开反馈见[Issue #13留档](issue-requeue.md)、[Issue #14留档](issue-historian-recovery.md)；本地同步验收解释、复现说明及竞品研究补充，PRD/initiative仅标注新输入和待重评事项。未重跑模型实验，不改原始日志、证据归档或测试脚本，不把上游建议视为本项目已批准设计。
+
+## 2026-11-11 手动 flush 功能建议
+
+- 已检查现有公开 Issue，无同类请求，新增 [#15](https://github.com/wk544863858/dsh-plugin-magic-context/issues/15)，[正文留档](issue-ctx-flush.md)。本次是源码核查，不是新的 DSH/模型实验；原始验收证据不变。
+- 插件 `dsh-plugin-magic-context@0.11.1`（上游 HEAD `93ef5fe4a06a2c05f53e6a6225346919e860d74e`）有自动处理 pending 的能力，但缺少用户显式强制落地入口。ctx-status 是状态读取，手动 compact 是 Historian checkpoint，二者不等价于 flush。
+- 原版参考包括 `v0.49.30` 的 executeFlush 和固定提交 `3c2b53940270b7e020b8ee23e8ce10214430f50e` 的命令文档/Pi 适配器：处理 pending 加相关刷新信号，下一请求生效；不能仅凭核心函数就宣称画面同步清空。
+- 建议不额外启动摘要模型、不回收未排队内容，并报告真实完成/待执行状态。首次正常入队即可作为独立验收，不能混入 #13 的 restore/requeue，也不扩展为 #14 的原文检索。
+- 已同步验收报告、竞品研究、PRD/initiative 的研究输入和 fork 交接入口；不修改既有 FR、版本基线或批准实施范围，不自动提交或推送本轮文档。

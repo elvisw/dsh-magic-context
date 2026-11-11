@@ -7,7 +7,7 @@ status: complete
 preset: standard
 validation: normal
 created: 2026-11-09
-updated: 2026-11-10
+updated: 2026-11-11
 ---
 
 # 上下文插件竞品与开发价值评估
@@ -25,6 +25,12 @@ updated: 2026-11-10
 - **#14是能力边界确认/改进建议：**实测Historian遮蔽后旧tag入口不可达，原始事件尚存；不据此断言原文物理删除或违反既有承诺。目标是提供不依赖当前占位符的原文读取入口，可以使用持久化tag或稳定消息/事件标识，不要求旧tag、撤销摘要或重建旧位置。见[#14及固定源码留档](../acceptance-windows-dsh-2026-11-09/issue-historian-recovery.md)。
 - **上游参考不是新运行验收：**对原版OpenCode适配器固定提交`17801ffd2f9635af1abae893e37914359110f2c1`核查源码和测试：TS可按持久化tag定位，Rust明确拒绝tag并引导消息序号/范围；原文作为新工具结果返回。不能宣称原版所有模式支持旧tag，也不能将DSH事件序号当成原版消息序号。
 - **决策含义不变，但依据更具体：**优先贡献上游，不从零重做；仅改变返回方式不会自动解决归档定位。两个Issue已提交并修订，不等于作者接受或已修复。本项目范围、正式技术设计及PRD版本基线仍需单独决策，此补充不自动批准实施。
+
+## 2026-11-11 补充：手动 flush 入口
+
+核查时目标插件默认分支仍为 `93ef5fe4a06a2c05f53e6a6225346919e860d74e`、版本 `dsh-plugin-magic-context@0.11.1`。源码已有管理拍落地 pending 的能力，但未发现 `/ctx-flush` 或等价的用户主动强制处理入口；`/ctx-status` 只读取状态，手动 `/compact` 则生成 Historian checkpoint，不能混同。
+
+已提交 [Issue #15](https://github.com/wk544863858/dsh-plugin-magic-context/issues/15)，[固定源码与正文留档](../acceptance-windows-dsh-2026-11-09/issue-ctx-flush.md)。原版 `v0.49.30` 已有核心 flush；另对照固定提交 `3c2b53940270b7e020b8ee23e8ce10214430f50e` 的文档与 Pi 适配器：处理 pending 并发出刷新信号，下一次模型请求生效，不是同步清空上下文或强制生成摘要。此结论只有源码/文档支持，未新增运行验收；功能建议不代替 #13 的状态修复或 #14 的检索能力，不改变既有采用建议，也不自动批准 fork 实施。
 
 ## 决策摘要
 
