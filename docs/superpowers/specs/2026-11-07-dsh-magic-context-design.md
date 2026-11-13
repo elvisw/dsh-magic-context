@@ -16,7 +16,7 @@ created: 2026-11-07
 
 2026-11-07：用户已批准阶段0的隔离Windows/DSH、文本/JSON、离线验证范围，并仅授权编写计划；未授权实现。阶段0计划见[验证计划](../plans/2026-11-07-stage0-context-lifecycle.md)。这不代表整个设计、完整V1或正式禁用行为已批准。
 
-需求：[PRD 草案](../../../_bmad-output/initiative-dsh-magic-context/prd-dsh-magic-context/prd-dsh-magic-context.md)。事实：[固定版本研究](../../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/research-context-lifecycle.md)。本文的实现选择均为提议，不能将源码研究的结论误读为运行验证成功。
+需求：[PRD 草案](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/prd-dsh-magic-context/prd-dsh-magic-context.md)。事实：[固定版本研究](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/research-context-lifecycle.md)。本文的实现选择均为提议，不能将源码研究的结论误读为运行验证成功。
 
 ## Goals
 

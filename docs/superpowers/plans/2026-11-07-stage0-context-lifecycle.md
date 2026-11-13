@@ -8,7 +8,7 @@
 
 **Tech Stack:** JavaScript ESM/JSDoc（仅验证包，不预定正式产品语言）、Node >=24.9.0、node:test、node:sqlite、DSH 0.2.2-rc.1、同版本 TypeScript SDK client。
 
-**Spec:** [设计草案](../specs/2026-11-07-dsh-magic-context-design.md)，特别是阶段0验收边界。事实依据：[研究报告](../../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/research-context-lifecycle.md)。
+**Spec:** [设计草案](../specs/2026-11-07-dsh-magic-context-design.md)，特别是阶段0验收边界。事实依据：[研究报告](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/research-context-lifecycle.md)。
 
 **Plan status:** draft / awaiting user review；仅计划作者自检完成，所有实施任务仍未执行。
 

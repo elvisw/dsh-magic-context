@@ -2,19 +2,21 @@
 
 本目录把聊天中已确认的需求、固定版本研究和后续规划串联起来，避免只在会话中保留关键结论。以下资料均已落盘；研究完成不等于插件已经实现。
 
+> **2026-11-13 迁移：**规划与研究资料已迁入 fork 仓库 [dsh-plugin-magic-context](https://github.com/elvisw/dsh-plugin-magic-context)；本文件中的相关链接已改为 fork 地址。下文“研究目录”等路径均指 fork 仓库内的 `_bmad-output/`。
+
 ## 后续实测与 fork 交接（2026-11-10）
 
-- [Fork 编程智能体轻量交接](../../_bmad-output/initiative-dsh-magic-context/handoff-fork-development/handoff-fork-development.md)：当前接手入口，区分已验证事实、拟议恢复契约和实施授权。
-- [Windows＋真实 DSH 隔离验收](../../_bmad-output/initiative-dsh-magic-context/acceptance-windows-dsh-2026-11-09/acceptance-report.md)：现成插件 `0.11.1` 的运行证据及 #13/#14 后续澄清。
-- [竞品研究及后续补充](../../_bmad-output/initiative-dsh-magic-context/research-context-plugin-landscape/research-context-plugin-landscape.md)：优先验证现成方案与贡献差距，而非从零重做。
+- [Fork 编程智能体轻量交接](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/handoff-fork-development/handoff-fork-development.md)：当前接手入口，区分已验证事实、拟议恢复契约和实施授权。
+- [Windows＋真实 DSH 隔离验收](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/acceptance-windows-dsh-2026-11-09/acceptance-report.md)：现成插件 `0.11.1` 的运行证据及 #13/#14 后续澄清。
+- [竞品研究及后续补充](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-plugin-landscape/research-context-plugin-landscape.md)：优先验证现成方案与贡献差距，而非从零重做。
 
 下文固定版本、阶段0及“未运行应用测试/模型”等状态属于早期独立移植研究，不涵盖后续现成插件验收；原始记录保留，不自动成为 fork 的需求或实现契约。
 
 ## 需求与决定
 
 - [用户需求与决定记录](user-input-and-decisions.md)：完整功能范围、首要痛点、已批准范围与未决事项。
-- [initiative](../../_bmad-output/initiative-dsh-magic-context/initiative-dsh-magic-context.md)。
-- [PRD草案](../../_bmad-output/initiative-dsh-magic-context/prd-dsh-magic-context/prd-dsh-magic-context.md)及其[过程日志](../../_bmad-output/initiative-dsh-magic-context/prd-dsh-magic-context/.memlog.md)。
+- [initiative](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/initiative-dsh-magic-context.md)。
+- [PRD草案](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/prd-dsh-magic-context/prd-dsh-magic-context.md)及其[过程日志](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/prd-dsh-magic-context/.memlog.md)。
 - [设计草案](../superpowers/specs/2026-11-07-dsh-magic-context-design.md)。
 - [阶段0验证计划](../superpowers/plans/2026-11-07-stage0-context-lifecycle.md)：仅授权规划，尚未批准执行方式或开始实现。
 
@@ -24,21 +26,21 @@
 
 | 资料 | 入口 |
 |---|---|
-| 获批研究问题、预算、证据规则与版本 | [brief.md](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/brief.md) |
-| 综合报告与源码来源 | [research-context-lifecycle.md](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/research-context-lifecycle.md) |
-| DSH定位 | [locator-dsh.md](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/locator-dsh.md) |
-| MC定位 | [locator-mc.md](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/locator-mc.md) |
-| DSH请求、变更与持久化 | [analyzer-q1-dsh.md](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/analyzer-q1-dsh.md) |
-| MC缩减与恢复 | [analyzer-q2-mc.md](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/analyzer-q2-mc.md) |
-| 共享资产与宿主边界 | [analyzer-q3-mc.md](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/analyzer-q3-mc.md) |
-| 两端已有测试的具体契约 | [analyzer-q4-tests.md](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/analyzer-q4-tests.md) |
-| DSH独立复核 | [verifier-dsh.md](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/verifier-dsh.md) |
-| MC独立复核 | [verifier-mc.md](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/verifier-mc.md) |
-| 测试证据独立复核 | [verifier-tests.md](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/verifier-tests.md) |
-| 分仓库关键源码锚点 | [claims-dsh.md](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/claims-dsh.md)、[claims-mc.md](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/claims-mc.md) |
-| 29处锚点的机械检查结果 | [verification-anchors.json](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/verification-anchors.json) |
-| 事实演变与15项语义复核日志 | [.memlog.md](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/.memlog.md) |
-| 文档结构、措辞及设计可执行性检查 | [structure](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/review-structure.md)、[prose](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/review-prose.md)、[builder](../../_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/review-builder.md) |
+| 获批研究问题、预算、证据规则与版本 | [brief.md](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/brief.md) |
+| 综合报告与源码来源 | [research-context-lifecycle.md](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/research-context-lifecycle.md) |
+| DSH定位 | [locator-dsh.md](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/locator-dsh.md) |
+| MC定位 | [locator-mc.md](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/locator-mc.md) |
+| DSH请求、变更与持久化 | [analyzer-q1-dsh.md](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/analyzer-q1-dsh.md) |
+| MC缩减与恢复 | [analyzer-q2-mc.md](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/analyzer-q2-mc.md) |
+| 共享资产与宿主边界 | [analyzer-q3-mc.md](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/analyzer-q3-mc.md) |
+| 两端已有测试的具体契约 | [analyzer-q4-tests.md](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/analyzer-q4-tests.md) |
+| DSH独立复核 | [verifier-dsh.md](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/verifier-dsh.md) |
+| MC独立复核 | [verifier-mc.md](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/verifier-mc.md) |
+| 测试证据独立复核 | [verifier-tests.md](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/digests/verifier-tests.md) |
+| 分仓库关键源码锚点 | [claims-dsh.md](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/claims-dsh.md)、[claims-mc.md](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/claims-mc.md) |
+| 29处锚点的机械检查结果 | [verification-anchors.json](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/verification-anchors.json) |
+| 事实演变与15项语义复核日志 | [.memlog.md](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/.memlog.md) |
+| 文档结构、措辞及设计可执行性检查 | [structure](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/review-structure.md)、[prose](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/review-prose.md)、[builder](https://github.com/elvisw/dsh-plugin-magic-context/blob/main/_bmad-output/initiative-dsh-magic-context/research-context-lifecycle/review-builder.md) |
 
 独立分析稿中的“awaiting verification”和早期日志中的unverified是当时的历史状态，不改写原始过程记录；最终状态以综合报告和后续verifier记录为准。
 
